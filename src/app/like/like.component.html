@@ -1,0 +1,12 @@
+<style>
+
+  .btn-like {
+    color : #ccc;
+  }
+  .btn-like.selected {
+    color : deeppink
+  }
+</style>
+<div>
+  <i class="glyphicon glyphicon-heart btn-like" [(ngModel)]="isSelected" [class.selected] = "isSelected" ngDefaultControl (click)="onClick()"></i> {{likesCount}} 
+</div>
