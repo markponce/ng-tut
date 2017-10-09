@@ -3,7 +3,7 @@
 <!-- <app-pipes></app-pipes> -->
 <!-- <app-custom-pipes></app-custom-pipes> -->
 <!-- <br> -->
-<!-- <favorite [is-favorite]="post.isFavorite" (change)="onFavoriteChanged($event)"></favorite> -->
+<favorite [is-favorite]="post.isFavorite" (change)="onFavoriteChanged($event)"></favorite>
 <!-- <br> -->
 <!-- <title-case></title-case> -->
 <!-- <app-panel>
@@ -14,3 +14,13 @@
 <like [is-liked] = "tweet.isLiked" [likes-count]="tweet.likesCount" (change)="onLikeChanged($event)"></like>
 
 <!-- <ngif></ngif> -->
+<ngswitch></ngswitch>
+<ngfor></ngfor>
+<input type="text" appInputFormat="lowercase" >
+
+<zippy title="Shipping Details">
+    Shipping Details Content
+</zippy>
+<!-- <zippy title="Billing Details">
+    Billing Details Content
+</zippy> -->

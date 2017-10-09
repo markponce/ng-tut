@@ -1,0 +1,6 @@
+<button class="btn btn-default" (click)="onAdd()">ADD</button>
+<ul>
+  <li *ngFor="let course of courses; trackBy: trackCourse">
+    {{course.name}} <button class="btn btn-default" (click)="onRemove(course)">Remove</button>
+  </li>
+</ul>

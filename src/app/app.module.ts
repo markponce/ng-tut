@@ -14,6 +14,10 @@ import { ComponentApiComponent } from './component-api/component-api.component';
 import { PanelComponent } from './panel/panel.component';
 import { LikeComponent } from './like/like.component';
 import { NgifComponent } from './ngif/ngif.component';
+import { NgswitchComponent } from './ngswitch/ngswitch.component';
+import { NgforComponent } from './ngfor/ngfor.component';
+import { InputFormatDirective } from './input-format.directive';
+import { ZippyComponent } from './zippy/zippy.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +32,11 @@ import { NgifComponent } from './ngif/ngif.component';
     ComponentApiComponent,
     PanelComponent,
     LikeComponent,
-    NgifComponent
+    NgifComponent,
+    NgswitchComponent,
+    NgforComponent,
+    InputFormatDirective,
+    ZippyComponent
   ],
   imports: [
     BrowserModule,

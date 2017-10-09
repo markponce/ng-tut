@@ -5,7 +5,10 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
   // templateUrl: './favorite.component.html',glyphicon-star 
   styleUrls: ['./favorite.component.css'],
   template : `
-    <span class="glyphicon" (click)="onClick()" [(ngModel)]="isSelected" [ngClass]="(!isSelected) ? ' glyphicon-star-empty' : 'glyphicon-star'" ngDefaultControl></span>
+    <span class="glyphicon" (click)="onClick()" [(ngModel)]="isSelected" [ngClass]="{
+      'glyphicon-star-empty' : !isSelected,
+      'glyphicon-star' : isSelected
+    }" ngDefaultControl></span>
     
   `
 })
