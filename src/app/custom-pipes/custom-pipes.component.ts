@@ -9,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
   `
 })
 export class CustomPipesComponent implements OnInit {
-  text = 'asdknalkjsgfhlsdkjabfjksa ksd;jflsdahbfjlksadnbfjksldabf sdlfhljaskdhfldjksfnkl;mfdpiwebvywiantuxuywhhfalhfjhghkjjdiuhjhfskkjhdkmmlksjkdsj';
+  text = 'lkmlkjmkfgnhbildnboiugdnbiudgnbihudf';
   constructor() { }
 
   ngOnInit() {
