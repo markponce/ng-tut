@@ -1,3 +1,4 @@
+import { SignupFormComponent } from './signup-form/signup-form.component';
 import { AppErrorHandler } from './common/app-error-handler';
 import { PostService } from './services/post.service';
 import { CoursesService } from './services/courses.service';
@@ -5,7 +6,7 @@ import {HttpModule} from '@angular/http';
 import { TitleCasePipe } from './title-case.pipe';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, ErrorHandler } from '@angular/core';
-import {FormsModule} from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { AppComponent } from './app.component';
 import { CoursesComponent } from './courses/courses.component';
 import { PipesComponent } from './pipes/pipes.component';
@@ -46,12 +47,14 @@ import { PostsComponent } from './posts/posts.component';
     ContactFormComponent,
     GeoLocationComponent,
     PostsComponent,
+    SignupFormComponent
     
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    ReactiveFormsModule
   ],
   providers: [
     PostService,
