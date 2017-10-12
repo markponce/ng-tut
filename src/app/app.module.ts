@@ -25,6 +25,8 @@ import { ZippyComponent } from './zippy/zippy.component';
 import { ContactFormComponent } from './contact-form/contact-form.component';
 import { GeoLocationComponent } from './geo-location/geo-location.component';
 import { PostsComponent } from './posts/posts.component';
+import { NestedFormComponent } from './nested-form/nested-form.component';
+import { FormArrayComponent } from './form-array/form-array.component';
 
 @NgModule({
   declarations: [
@@ -47,7 +49,9 @@ import { PostsComponent } from './posts/posts.component';
     ContactFormComponent,
     GeoLocationComponent,
     PostsComponent,
-    SignupFormComponent
+    SignupFormComponent,
+    NestedFormComponent,
+    FormArrayComponent
     
   ],
   imports: [
