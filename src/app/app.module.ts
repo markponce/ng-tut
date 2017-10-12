@@ -1,3 +1,4 @@
+import { FollowerService } from './services/follower.service';
 import { SignupFormComponent } from './signup-form/signup-form.component';
 import { AppErrorHandler } from './common/app-error-handler';
 import { PostService } from './services/post.service';
@@ -27,6 +28,7 @@ import { GeoLocationComponent } from './geo-location/geo-location.component';
 import { PostsComponent } from './posts/posts.component';
 import { NestedFormComponent } from './nested-form/nested-form.component';
 import { FormArrayComponent } from './form-array/form-array.component';
+import { FollowersComponent } from './followers/followers.component';
 
 @NgModule({
   declarations: [
@@ -51,7 +53,8 @@ import { FormArrayComponent } from './form-array/form-array.component';
     PostsComponent,
     SignupFormComponent,
     NestedFormComponent,
-    FormArrayComponent
+    FormArrayComponent,
+    FollowersComponent
     
   ],
   imports: [
@@ -61,9 +64,11 @@ import { FormArrayComponent } from './form-array/form-array.component';
     ReactiveFormsModule
   ],
   providers: [
+    FollowerService,
     PostService,
     CoursesService,
     { provide: ErrorHandler, useClass: AppErrorHandler }
+    
   ],
   bootstrap: [AppComponent]
 })
